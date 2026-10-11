@@ -10,7 +10,7 @@ export default function Home() {
         </Link>
         <div className="nav-links">
           <a href="#why">Why orbit</a>
-          <a href="#signal">The signal</a>
+          <a href="#signal">The obsession with thinkpads</a>
           <a href="#join">Join waitlist</a>
         </div>
         <a className="nav-cta" href="#join">
