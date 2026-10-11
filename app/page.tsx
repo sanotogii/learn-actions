@@ -4,17 +4,21 @@ export default function Home() {
   return (
     <main className="site-shell">
       <nav className="nav-bar" aria-label="Main navigation">
-        <Link className="brand" href="/" aria-label="Orbit home">
+        <Link className="brand" href="/" aria-label="DevCloud home">
           <span className="brand-mark">✦</span>
-          <span>orbit<span className="brand-dot">.</span></span>
+          <span>
+            devcloud<span className="brand-dot">.</span>
+          </span>
         </Link>
+
         <div className="nav-links">
-          <a href="#why">Why orbit</a>
-          <a href="#signal">The obsession with thinkpads</a>
-          <a href="#join">Join waitlist</a>
+          <a href="#about">About us</a>
+          <a href="#stack">Our stack</a>
+          <a href="#community">Our community</a>
         </div>
-        <a className="nav-cta" href="#join">
-          Get early access <span aria-hidden="true">↗</span>
+
+        <a className="nav-cta" href="#community">
+          Meet the class <span aria-hidden="true">↗</span>
         </a>
       </nav>
 
@@ -22,76 +26,103 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow">
             <span className="pulse-dot" />
-            The internet, in a better orbit
+            FPL Larache · DevOps & Cloud Computing
           </div>
+
           <h1>
-            Devops class
-            <span className="gradient-text"> is the best in the world.</span>
+            We build.
+            <span className="gradient-text"> We automate. We deploy.</span>
           </h1>
+
           <p className="hero-description">
-            Orbit is a calmer, smarter space for the people and projects that
-            move culture forward. Find your signal. Follow it further.
+            A class of future DevOps engineers and cloud architects at Faculté
+            Polydisciplinaire de Larache. We turn ideas into reliable
+            applications through automation, collaboration, and cloud-native
+            technologies.
           </p>
+
           <div className="hero-actions">
-            <a className="primary-button" href="#join">
-              Start exploring <span aria-hidden="true">→</span>
+            <a className="primary-button" href="#stack">
+              Explore our world <span aria-hidden="true">→</span>
             </a>
-            <a className="text-button" href="#why">
-              See how it works <span aria-hidden="true">↓</span>
+
+            <a className="text-button" href="#about">
+              Discover our class <span aria-hidden="true">↓</span>
             </a>
           </div>
+
           <div className="social-proof">
             <div className="avatar-stack" aria-hidden="true">
-              <span className="avatar avatar-one">M</span>
-              <span className="avatar avatar-two">J</span>
-              <span className="avatar avatar-three">A</span>
+              <span className="avatar avatar-one">D</span>
+              <span className="avatar avatar-two">C</span>
+              <span className="avatar avatar-three">O</span>
               <span className="avatar avatar-four">+</span>
             </div>
-            <p><strong>2,400+</strong> curious minds already orbiting</p>
+            <p>
+              <strong>One class.</strong> Infinite possibilities.
+            </p>
           </div>
         </div>
 
-        <div className="hero-art" aria-label="Abstract orbit illustration">
+        <div
+          className="hero-art"
+          aria-label="Abstract cloud computing and connected infrastructure illustration"
+        >
           <div className="art-glow" />
           <div className="orbit orbit-large" />
           <div className="orbit orbit-small" />
           <div className="orbit orbit-tilted" />
+
           <div className="planet">
             <span className="planet-shine" />
           </div>
-          <div className="satellite satellite-top">✦</div>
+
+          <div className="satellite satellite-top">⌘</div>
           <div className="satellite satellite-right">✧</div>
-          <div className="satellite satellite-bottom">+</div>
-          <div className="art-label label-top">curiosity</div>
-          <div className="art-label label-bottom">connection</div>
+          <div className="satellite satellite-bottom">↗</div>
+
+          <div className="art-label label-top">automation</div>
+          <div className="art-label label-bottom">cloud native</div>
         </div>
       </section>
 
-      <section className="feature-strip" id="why">
+      <section className="feature-strip" id="about">
         <article>
           <span className="feature-number">01</span>
-          <h2>Less noise.</h2>
-          <p>A focused place for what matters, without the endless scroll.</p>
+          <h2>Think in systems.</h2>
+          <p>
+            Understand infrastructure, Linux, networking, and the foundations
+            that keep modern applications running.
+          </p>
         </article>
-        <article>
+
+        <article id="stack">
           <span className="feature-number">02</span>
-          <h2>More signal.</h2>
-          <p>Discover thoughtful work from people worth paying attention to.</p>
+          <h2>Automate everything.</h2>
+          <p>
+            Explore Docker, Kubernetes, CI/CD, Git, Jenkins, and infrastructure
+            automation to ship software faster.
+          </p>
         </article>
-        <article id="signal">
+
+        <article id="community">
           <span className="feature-number">03</span>
-          <h2>Stay curious.</h2>
-          <p>Follow ideas as they evolve and find where they take you next.</p>
+          <h2>Build together.</h2>
+          <p>
+            Share projects, solve real-world problems, learn from each other,
+            and grow into the next generation of cloud and DevOps engineers.
+          </p>
         </article>
       </section>
 
       <section className="join-banner" id="join">
         <div>
-          <span className="eyebrow">Your next chapter is out there</span>
-          <h2>Come find your orbit.</h2>
+          <span className="eyebrow">Faculté Polydisciplinaire de Larache</span>
+          <h2>From localhost to the cloud.</h2>
         </div>
-        <a className="primary-button light-button" href="mailto:hello@orbit.example">
-          Join the waitlist <span aria-hidden="true">↗</span>
+
+        <a className="primary-button light-button" href="#community">
+          Join our journey <span aria-hidden="true">↗</span>
         </a>
       </section>
     </main>
