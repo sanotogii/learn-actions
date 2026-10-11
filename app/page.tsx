@@ -25,8 +25,8 @@ export default function Home() {
             The internet, in a better orbit
           </div>
           <h1>
-            Make room for
-            <span className="gradient-text"> better ideas.</span>
+            Devops class
+            <span className="gradient-text"> is the best in the world.</span>
           </h1>
           <p className="hero-description">
             Orbit is a calmer, smarter space for the people and projects that
