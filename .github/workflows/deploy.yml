@@ -22,3 +22,5 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       - run: echo "site is live on learn-action.khalidlab.tech"
+      - run: apt install fastfetch
+      - run: fastfetch
