@@ -17,20 +17,11 @@ jobs:
 
       - run: npm ci
 
-      - name: Deploy (with retry)
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 10
-          max_attempts: 3
-          retry_wait_seconds: 20
-          command: npm run deploy
+      - run: npm run deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          WRANGLER_LOG: debug
-
       - run: echo "site is live on learn-action.khalidlab.tech"
-
       - name: Fastfetch
         continue-on-error: true
         run: |
