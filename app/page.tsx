@@ -14,7 +14,7 @@ export default function Home() {
         <div className="nav-links">
           <a href="#about">About us</a>
           <a href="#stack">Our stack</a>
-          <a href="#community">Our community</a>
+          <a href="#community">Our class</a>
         </div>
 
         <a className="nav-cta" href="#community">
