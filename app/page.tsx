@@ -12,13 +12,13 @@ export default function Home() {
         </Link>
 
         <div className="nav-links">
-          <a href="#about">About us</a>
-          <a href="#stack">Our stack</a>
-          <a href="#community">Our class</a>
+          <a href="#about">Why pipelines</a>
+          <a href="#stack">Pipeline stages</a>
+          <a href="#community">Our workflow</a>
         </div>
 
-        <a className="nav-cta" href="#community">
-          Meet the class <span aria-hidden="true">↗</span>
+        <a className="nav-cta" href="#join">
+          Start building <span aria-hidden="true">↗</span>
         </a>
       </nav>
 
@@ -26,47 +26,47 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow">
             <span className="pulse-dot" />
-            FPL Larache · DevOps & Cloud Computing
+            FPL Larache · CI/CD with GitHub Actions
           </div>
 
           <h1>
-            We build.
-            <span className="gradient-text"> We automate. We deploy.</span>
+            Push code.
+            <span className="gradient-text"> We build. We test. We deploy.</span>
           </h1>
 
           <p className="hero-description">
-            A class of future DevOps engineers and cloud architects at Faculté
-            Polydisciplinaire de Larache. We turn ideas into reliable
-            applications through automation, collaboration, and cloud-native
-            technologies.
+            A class of future DevOps engineers at Faculté Polydisciplinaire de
+            Larache, building CI/CD pipelines with GitHub Actions. Every commit
+            triggers a workflow that builds, tests, packages, and ships our
+            applications automatically.
           </p>
 
           <div className="hero-actions">
             <a className="primary-button" href="#stack">
-              Explore our world <span aria-hidden="true">→</span>
+              See the pipeline <span aria-hidden="true">→</span>
             </a>
 
             <a className="text-button" href="#about">
-              Discover our class <span aria-hidden="true">↓</span>
+              Why automate <span aria-hidden="true">↓</span>
             </a>
           </div>
 
           <div className="social-proof">
             <div className="avatar-stack" aria-hidden="true">
-              <span className="avatar avatar-one">D</span>
-              <span className="avatar avatar-two">C</span>
-              <span className="avatar avatar-three">O</span>
-              <span className="avatar avatar-four">+</span>
+              <span className="avatar avatar-one">C</span>
+              <span className="avatar avatar-two">I</span>
+              <span className="avatar avatar-three">C</span>
+              <span className="avatar avatar-four">D</span>
             </div>
             <p>
-              <strong>One class.</strong> Infinite possibilities.
+              <strong>One commit.</strong> One automated release.
             </p>
           </div>
         </div>
 
         <div
           className="hero-art"
-          aria-label="Abstract cloud computing and connected infrastructure illustration"
+          aria-label="Abstract illustration of a CI/CD pipeline moving code from commit to cloud"
         >
           <div className="art-glow" />
           <div className="orbit orbit-large" />
@@ -81,36 +81,39 @@ export default function Home() {
           <div className="satellite satellite-right">✧</div>
           <div className="satellite satellite-bottom">↗</div>
 
-          <div className="art-label label-top">automation</div>
-          <div className="art-label label-bottom">cloud native</div>
+          <div className="art-label label-top">on: push</div>
+          <div className="art-label label-bottom">deploy: prod</div>
         </div>
       </section>
 
       <section className="feature-strip" id="about">
         <article>
           <span className="feature-number">01</span>
-          <h2>Think in systems.</h2>
+          <h2>Trigger on every change.</h2>
           <p>
-            Understand infrastructure, Linux, networking, and the foundations
-            that keep modern applications running.
+            Define workflows in YAML under .github/workflows and run them on
+            push, pull request, schedule, or manual dispatch. Every change gets
+            checked before it reaches the main branch.
           </p>
         </article>
 
         <article id="stack">
           <span className="feature-number">02</span>
-          <h2>Automate everything.</h2>
+          <h2>Build, test, ship.</h2>
           <p>
-            Explore Docker, Kubernetes, CI/CD, Git, Jenkins, and infrastructure
-            automation to ship software faster.
+            Chain jobs for linting, unit tests, Docker image builds, and
+            deployment. Use caching, matrix builds, and reusable actions to
+            keep runs fast and reliable.
           </p>
         </article>
 
         <article id="community">
           <span className="feature-number">03</span>
-          <h2>Build together.</h2>
+          <h2>Protect and release together.</h2>
           <p>
-            Share projects, solve real-world problems, learn from each other,
-            and grow into the next generation of cloud and DevOps engineers.
+            Store credentials in GitHub Secrets, require passing checks and
+            reviews before merging, and promote releases through environments
+            with approvals.
           </p>
         </article>
       </section>
@@ -118,11 +121,11 @@ export default function Home() {
       <section className="join-banner" id="join">
         <div>
           <span className="eyebrow">Faculté Polydisciplinaire de Larache</span>
-          <h2>From localhost to the cloud.</h2>
+          <h2>From git push to production.</h2>
         </div>
 
-        <a className="primary-button light-button" href="#community">
-          Join our journey <span aria-hidden="true">↗</span>
+        <a className="primary-button light-button" href="#stack">
+          Build your first workflow <span aria-hidden="true">↗</span>
         </a>
       </section>
     </main>
